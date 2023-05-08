@@ -8,6 +8,7 @@ public class Main {
         ogrenciIsmi="ahmet";
         System.out.println(ogrenciIsmi);
         System.out.println("yeni kod ekleme");
+        System.out.println("gitHUb üzerinden ekleme");
 
         System.out.println("burası github add sonrası fetch yapmadan deneme");
     }
