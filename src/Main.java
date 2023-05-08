@@ -4,8 +4,10 @@ public class Main {
         String       ogrenciIsmi            =                "Matrix     ."   ;
         //DataType   variableName    assigmentOperator          value
         System.out.println(ogrenciIsmi);
-        ogrenciIsmi="kerim";
+
         ogrenciIsmi="ahmet";
         System.out.println(ogrenciIsmi);
+        System.out.println("yeni kod ekleme");
+
     }
 }
