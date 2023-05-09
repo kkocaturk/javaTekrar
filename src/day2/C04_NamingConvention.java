@@ -8,7 +8,10 @@ public class C04_NamingConvention {
                 "variable rakam ile başlamaz\n" +
                 "_ve$ ile başlayaabilir ama tavsiye edilmez \n" +
                 "küçük harfle başlar" +
-                "birden fazla kelime varsa CamelCase yazılır";
+                "birden fazla kelime varsa CamelCase yazılır" +
+                "type nul  > kerim.txt yeni kerim.txt oluşturur.!!! -> hataveriyor gözükse de  dosya oluşur.!" +
+                "New-Item -ItemType File -Name \"yeni_dosya.txt\" " +
+                "kodu da PowerShell komutudur.";
         System.out.println(str);
 
     }
