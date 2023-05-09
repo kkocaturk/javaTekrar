@@ -1,2 +1,5 @@
-javaTekrarAhmetBulutluoz.iml
-/out/
+#yorum satırı
+*.iml
+# /day3/ klasör
+/day3/
+/.idea/
