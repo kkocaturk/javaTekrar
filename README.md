@@ -5,7 +5,7 @@ Github kullanımı tekrarı
 * git init -- ilk kez proje oluşturma
 * git add <file>
 - git add . (all)
-- git commit -m "açıklma"
+- git commit -m "açıklama"
 - git status       --> dosyaların durumunu gösterir
 - git diff        --> dosyadaki değişikliği gösterir
 - git checkout branchName  --> branchler arası geçiş
@@ -77,7 +77,9 @@ console.log("Hello world")
 | Ürünlerin Numaraları| Ürün Açıklaması| Ürünlerin Fiyatı|
 | :--- | :---: | ---: |
 | 1 | Açıklama | Fiyatı |
+
 ## 3. gün
+- DataCasting çalışması ve Wrapper class
 
 
 
