@@ -14,6 +14,9 @@ Github kullanımı tekrarı
 - git clone   -> clone etme
 
 ## 2. gün
+###detaylı bilgi commonmark.org/help
+[gitmek için tıkla](https://commonmark.org/help)
+* README.md -->.md markdown dosyasıdır.
 - -list item yazılması
 - -list item yazılması2
 * *list item yazılması
@@ -21,7 +24,60 @@ Github kullanımı tekrarı
 ### * italic *      ve   ** bold **     ve      *** bolditalic *** yazma
 *italic*  **bold**  ***bolditalic***
 - [link ekleme](https://www.github.com/kkocaturk)
-- 
+***
+- image eklemek için sadece link kodunun başına ! eklenir
+----------------------
+![image](https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc)
+----------------
+
+> Blockquote 
+> bu kısımda kullanışlı
+
+`System.out.println("Hello world!");  // kısa kodlama alanı inline code ` iki ` arasında kullanılır  
+
+
+```
+# code block 3 adet ` backticks ile açılır
+print '3 backticks or'
+print 'indent 4 spaces'
+```
+kullanılan yazılım dili de belirtilebiliriz.
+
+```java
+class Myspace {
+    public static void main(String [] args) {
+        System.out.println("Java candır!");
+}
+}
+```
+
+```javascript
+console.log("Hello world");
+function helloWorld() {
+console.log("Hello world")
+}
+```
+1. Liste Elemanı sıralı liste oluşturma
+2. Liste Elemanı
+3. Liste Elemanı
+---
+1. Liste Elemanı, markdown satır başında 1. yazıyor--> 1 olarak düzenliyor
+8. Liste Elemanı, markdown satır başında 8. yazıyor--> 2 olarak düzenliyor
+13. Liste Elemanı, markdown satır başında 13. yazıyor-->3 olarak düzenliyor
+--- 
+-- içiçe liste yapmak--
+1. Liste Elemanı
+1. Alt Liste Elemanı
+2. Alt Liste Elemanı
+2. Liste Elemanı
+3. Liste Elemanı
+---
+- tablo yapmak
+
+| Ürünlerin Numaraları| Ürün Açıklaması| Ürünlerin Fiyatı|
+| :--- | :---: | ---: |
+| 1 | Açıklama | Fiyatı |
 ## 3. gün
+
 
 

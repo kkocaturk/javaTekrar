@@ -1,4 +1,4 @@
-package day2;
+package day2_dataTurleri_Scanner;
 
 public class C04_NamingConvention {
     public static void main(String[] args) {

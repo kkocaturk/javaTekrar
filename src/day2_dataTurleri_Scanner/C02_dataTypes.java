@@ -1,4 +1,4 @@
-package day2;
+package day2_dataTurleri_Scanner;
 
 public class C02_dataTypes {
     public static void main(String[] args) {

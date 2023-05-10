@@ -1,6 +1,4 @@
-package day2;
-
-import java.util.Locale;
+package day2_dataTurleri_Scanner;
 
 public class C03_NonPrimitiveDataTypes {
     public static void main(String[] args) {

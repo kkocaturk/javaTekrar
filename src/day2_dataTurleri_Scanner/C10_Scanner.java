@@ -1,4 +1,4 @@
-package day2;
+package day2_dataTurleri_Scanner;
 
 import java.util.Scanner;
 
