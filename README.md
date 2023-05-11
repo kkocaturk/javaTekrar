@@ -80,6 +80,12 @@ console.log("Hello world")
 
 ## 3. gün
 - DataCasting çalışması ve Wrapper class
+- Expilicit Narrowing işlemleri
+## 4. gün
+- ASCII Table
+- Data Casting
+- Wrapper Class int -->Integer
+- Matematik işlem öncelikleri (üs, parantez, (çarpma, bölme), (toplama, çıkarma) ) --> eşitlik durumunda soldan sağa
 
 
 
