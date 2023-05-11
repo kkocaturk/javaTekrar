@@ -1,6 +1,6 @@
-package day3_dataCasting_WrapperClass;
+package day3_scanner_dataCasting;
 
-public class C05_ExplicitNarroving {
+public class C05_ExplicitNarrowing {
     public static void main(String[] args) {
         //daha geniş kapsamlı datayı daha dar kapsamlı variable'a atmak istediğimizde Java bunu otomatik olarak yapmayacaktır.
         double db1 = 45.32;

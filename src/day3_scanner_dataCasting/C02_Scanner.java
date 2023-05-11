@@ -1,4 +1,4 @@
-package day3_dataCasting_WrapperClass;
+package day3_scanner_dataCasting;
 
 import java.util.Scanner;
 
