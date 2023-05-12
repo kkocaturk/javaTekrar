@@ -1,7 +1,7 @@
 package day4_DataCasting_wrapperClass;
 
 public class C03_DataCasting {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         int a = 20;
         int b = 6;
 

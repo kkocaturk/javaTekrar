@@ -87,5 +87,10 @@ console.log("Hello world")
 - Wrapper Class int -->Integer
 - Matematik işlem öncelikleri (üs, parantez, (çarpma, bölme), (toplama, çıkarma) ) --> eşitlik durumunda soldan sağa
 
-
+## 5. gün
+- a=a+1; ---> a++; 
+- a++ ile ++a farkı
+- 2030Java sout(20+""+30+"Java")
+- Java2030 sout("Java"+20+30)
+- Java50 --> sout("Java"+(20+30))
 
