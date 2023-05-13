@@ -95,5 +95,8 @@ console.log("Hello world")
 - Java50 --> sout("Java"+(20+30))
 
 ## 6. gün
-- 
-
+- if statements
+- if else  yapıları
+- & ile && farkı
+- char değişkenleri matematiksel işleme girdiklerinde ASCII tablosuna göre işlem yapması
+- Wrapper class'tan faydalanarak işlem yapma --> Character.toUpperCase(krk)
