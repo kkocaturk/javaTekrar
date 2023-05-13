@@ -24,5 +24,7 @@ public class C05_ExplicitNarrowing {
         int bbb = 567;
         byte ccc = (byte) aaa;  //zorlayarak daraltma
         byte ddd = (byte) bbb;
+        System.out.println(ccc); //12
+        System.out.println(ddd); //55
     }
 }

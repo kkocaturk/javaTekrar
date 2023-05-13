@@ -94,3 +94,6 @@ console.log("Hello world")
 - Java2030 sout("Java"+20+30)
 - Java50 --> sout("Java"+(20+30))
 
+## 6. gün
+- 
+
