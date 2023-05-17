@@ -9,6 +9,10 @@ public class C04_StringIntGecis {
         int sayi = Integer.parseInt(s1);
         System.out.println(sayi++); // 423
 
+        System.out.println(sayi); // 424
+
+
+
         int a = 20;
         int b = 40;
 

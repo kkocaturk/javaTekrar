@@ -4,6 +4,7 @@ public class C01_IncrementDecrement {
     public static void main(String[] args) {
         int a = 20;
         // a değerini 3 artırın ve yenideğerini bye ata
+        //a=a+3;
         a += 3;
         int b = a;
         System.out.println(b);
