@@ -1,8 +1,8 @@
-package day7_genelTekrarIfelseStatements;
+package day8_nestedifElse_ternary;
 
 import java.util.Scanner;
 
-public class C07_IfelseIf_ArtikYil {
+public class C01_IfelseIf_ArtikYil {
     static boolean isContinue = true;
 
     public static void main(String[] args) {
@@ -11,6 +11,8 @@ public class C07_IfelseIf_ArtikYil {
           Kural1: 4 ile bölünemeyen yıllar artık yıl değildir
           Kural2: 4 ile bölünüp 100 ile bölünemeyen yıllara artık yıldır.
           kural3: 4^ün katı olmasına rağmen 100 ile bölünebilen yıllardan sadece 400'ün katı olan yıllar artık yıldır.
+
+          1800 artık yıl değildir.
            */
 
         do {
@@ -25,7 +27,6 @@ public class C07_IfelseIf_ArtikYil {
             }
 
         } while (isContinue == true);
-
 
     }
 
