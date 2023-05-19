@@ -100,3 +100,19 @@ console.log("Hello world")
 - & ile && farkı
 - char değişkenleri matematiksel işleme girdiklerinde ASCII tablosuna göre işlem yapması
 - Wrapper class'tan faydalanarak işlem yapma --> Character.toUpperCase(krk)
+
+## 7. gün
+- IfelseIf yapısı
+
+## 8.gün
+- Nested If else yapısı 
+- Ternary yapısı
+- Nested ternary 
+
+## 9. gün 
+- Switch 
+- String Manipulation
+- Equals ve == karşılaştırma 
+- concat()
+
+
