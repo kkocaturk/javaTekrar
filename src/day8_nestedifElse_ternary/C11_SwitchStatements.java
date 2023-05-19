@@ -29,6 +29,7 @@ public class C11_SwitchStatements {
         // switch statements , switch'in onunde yazilan degiskene esit olan case'i calistirir
         // calismaya basladiktan sonra
         // break gorunceye kadar veya switch'in sonuna kadar calisir
+        //switch ifadesinde long double float boolean kullanılmaz
 
         switch (harf) {
 

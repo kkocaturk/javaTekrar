@@ -8,7 +8,7 @@ public class C09_Ternary {
         // Soru 5- Kullanicidan iki sayi alin ve buyuk olmayan sayiyi yazdirin
         Scanner scanner=new Scanner(System.in);
         System.out.println("iki sayı girin: ");
-        int a = scanner.nextInt(); ;
+        int a = scanner.nextInt();
         int b = scanner.nextInt();
 
         System.out.println(a>b ? b : a);
