@@ -10,6 +10,8 @@ public class C06_lastIndexOf {
         System.out.println(str.indexOf("a")); // 1
 
         System.out.println(str.lastIndexOf("a")); // 20
+        System.out.println(str.lastIndexOf("yakar")); // 17
+
 
         System.out.println(str.indexOf("a", 2)); // 3
 

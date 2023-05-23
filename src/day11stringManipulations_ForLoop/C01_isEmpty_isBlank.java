@@ -21,7 +21,7 @@ public class C01_isEmpty_isBlank {
         System.out.println(str.isEmpty()); // true
         System.out.println(str.length()); // 0
 
-        System.out.println(str.isBlank()); //
+        System.out.println(str.isBlank()); //true
 
     }
 }
