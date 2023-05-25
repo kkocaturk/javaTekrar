@@ -25,9 +25,9 @@ public class C04_MethodOverloading {
     topla(3,5); // 8
     topla(3.4,2.3); // 5.7
 
-    // topla("ali","veli");  CTE bu argument'leri kabul edebilecek parametre yok
+    // topla("ali","veli");  // CTE bu argument'leri kabul edebilecek parametre yok
 
-    topla('a','b'); // iki int 195
+    topla('a','b'); // iki int 195 char değerler ASCII tablosuna göre işlem gördü
 
     topla(3f , 4f); // iki double 7.0
 
@@ -50,4 +50,5 @@ public class C04_MethodOverloading {
     public static void topla(double sayi1 , int sayi2){ // topla double int
         System.out.println("double ve int sayilarin toplami : " + (sayi1+sayi2));
     }
+
 }
