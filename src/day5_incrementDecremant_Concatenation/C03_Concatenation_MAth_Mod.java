@@ -1,6 +1,6 @@
 package day5_incrementDecremant_Concatenation;
 
-public class C03_Concatenation {
+public class C03_Concatenation_MAth_Mod {
     public static void main(String[] args) {
         //Bir String başka bir String veya başka data türünden bir variable ile
         //+ işareti ile birleştirilebilir.
@@ -21,6 +21,13 @@ public class C03_Concatenation {
         System.out.println(a + c * d); //Java200
         System.out.println(d + c + a); //30Java
 
+        System.out.println("bu kodlara dikkat↓↓↓");
+        int x = 1, y = 2, r=3;
+        r *=x + y;
+        System.out.print("int x = 1, y = 2, r=3;\nr *=x + y; SONUCUNDA r: "+r);
+        System.out.println("-----");
+        byte num1=-12, num2=-5;
+        System.out.println("num1%num2 = " + num1 % num2);
 
 
     }

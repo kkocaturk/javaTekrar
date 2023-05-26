@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class C07_Static_Instance {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
-        scanner.nextInt();
+       // scanner.nextInt();
+
     }
 }
