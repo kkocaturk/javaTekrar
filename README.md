@@ -114,5 +114,20 @@ console.log("Hello world")
 - String Manipulation
 - Equals ve == karşılaştırma 
 - concat()
+- Polimorfizm çalışması
 
+## 10. gün
+- String Manipulation
+- String str = "Java cok ama cok guzel";
+- substring(1)   
+- substring(1,5)
+- contains()
+- str.startsWith("java");
+- str.endsWith("a");
+- email.endsWith("@gmail.com");
+- str.indexOf("cok")
+- str.indexOf("cok", 6)
+- str.lastIndexOf("a")
+- str.lastIndexOf("a", 19)
+---
 
