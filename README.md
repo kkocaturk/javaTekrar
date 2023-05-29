@@ -142,7 +142,7 @@ console.log("Hello world")
 - char karakterler[] = {'e','4',','}; ---> javanın sevmediği yazım tarzı
 -  Arrays.toString(diziIsmi) kullanımı
 -  System.out.println("booleanDizi = " + booleanDizi); // booleanDizi = [Z@568db2f2
-   System.out.println("booleanDizi.toString() = " + booleanDizi.toString()); // booleanDizi.toString() = [Z@568db2f2
-   System.out.println("Arrays.toString(booleanDizi) = " + Arrays.toString(booleanDizi)); // Arrays.toString(booleanDizi) = [false, false, false, false, false]
+-  System.out.println("booleanDizi.toString() = " + booleanDizi.toString()); // booleanDizi.toString() = [Z@568db2f2
+-  System.out.println("Arrays.toString(booleanDizi) = " + Arrays.toString(booleanDizi)); // Arrays.toString(booleanDizi) = [false, false, false, false, false]
 ---
 
