@@ -1,0 +1,31 @@
+In Windows command Prompt:
+
+both type & echo can create a file
+
+for creating empty file, for example a text file
+
+1- TYPE nul > pathNewFile.txt   ---> pathNewFile.txt isimli boş dosya oluştur
+                                     yazılıştaki boşluklara dikkat et.
+
+2- Echo > pathNewFile.txt       ---> içerik ekleme imkanı var --->    cmdlet Write-Output at command pipeline position 1
+                                    satır satır veri alır             Supply values for the following parameters:
+                                                                      InputObject[0]: sıfırıncı index
+                                                                      InputObject[1]: 1. index
+                                                                      InputObject[2]: 2
+                                                                      InputObject[3]:
+
+for adding content to new or existing file by Echo
+
+3- Echo some text > pathNewOrExistingFile.txt    ---> some
+                                                      text  verilen metni silip eskisinin üzerine yazar.
+
+and for Type it puts content of another file
+
+4- TYPE pathExistingFile.txt > pathNewOrExistingFile.txt --> içeriği aktarır.
+
+and in both of them for appending content instead of overriding content we use >> for >
+
+5- Echo more text >> pathFileName.txt   --> some
+                                            text
+                                            more
+                                            text  verilen metni varolana ekleyerek yazar

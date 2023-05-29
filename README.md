@@ -130,4 +130,19 @@ console.log("Hello world")
 - str.lastIndexOf("a")
 - str.lastIndexOf("a", 19)
 ---
+## 16. gün
+- OOP konsepti 
+- static variable local variable kapsamları ve kullanılabileceği seviyeler.
+- ClassAdı.staticVariable
+- obje.instantVariable
+- Array giriş
+- array tanımlama 
+- String[] arr = new String[5];
+- String[] isimler = {"Ali","Veli,"Deli"};
+- char karakterler[] = {'e','4',','}; ---> javanın sevmediği yazım tarzı
+-  Arrays.toString(diziIsmi) kullanımı
+-  System.out.println("booleanDizi = " + booleanDizi); // booleanDizi = [Z@568db2f2
+   System.out.println("booleanDizi.toString() = " + booleanDizi.toString()); // booleanDizi.toString() = [Z@568db2f2
+   System.out.println("Arrays.toString(booleanDizi) = " + Arrays.toString(booleanDizi)); // Arrays.toString(booleanDizi) = [false, false, false, false, false]
+---
 
