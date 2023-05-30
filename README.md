@@ -146,3 +146,6 @@ console.log("Hello world")
 -  System.out.println("Arrays.toString(booleanDizi) = " + Arrays.toString(booleanDizi)); // Arrays.toString(booleanDizi) = [false, false, false, false, false]
 ---
 
+## 17.gün
+- Array'lerde for döngüsü kullanımı
+- 
