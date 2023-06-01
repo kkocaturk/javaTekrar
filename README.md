@@ -154,9 +154,14 @@ console.log("Hello world")
    int[] arr1= {3,9,6,1,7};
    Arrays.sort(arr1);
 ```
-- Arrays.binarySearch() ↓ kullanımı
-
-` System.out.println(Arrays.binarySearch(arr2, "ali")); // 6 ` 
+- Arrays.binarySearch() ↓ kullanımı //sort yapılmadan binarySearch yapılırsa sağlıklı çalışmaz.!
+```
+   int[] arr1= {3,9,6,1,7};
+   Arrays.sort(arr1);
+    
+    System.out.println(Arrays.binarySearch(arr2, "ali")); // 6  
+```
+---
 
 ## 18.gün
 
