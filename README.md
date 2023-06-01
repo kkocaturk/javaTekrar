@@ -148,4 +148,10 @@ console.log("Hello world")
 
 ## 17.gün
 - Array'lerde for döngüsü kullanımı
-- 
+- Array kullanma ve yeni array oluşturarak eskiArr güncelleme
+- sort sıralama
+```
+   int[] arr1= {3,9,6,1,7};
+   Arrays.sort(arr1);
+```
+`` System.out.println(Arrays.binarySearch(arr2, "ali")); // 6
