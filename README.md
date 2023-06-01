@@ -172,5 +172,18 @@ yapılarak
 > yoluna gidilerek git add .\ClassWillBeLoad.java yapılır. 
 
 
--
+- binarySearch() için sort kullanılmalı.
+``` java
+String str= "Java candir can, bundan suphesi olan var mi?";
+String[] kelimeler= str.split(" ");
+System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, suphesi, olan, var, mi?]
+``` 
+
+- str.split("can");
+
+### MultiDimensionalArray
+` int[][] arr = {{3,4,5},{2,3},{1}}; `
+- outerArray içindeki innerArrayleri yazdırmak istersek deepToString kullanılır. sout(Arrays.ToString(arr);)-> referans değerler döner dikkat MDA
+- System.out.println(Arrays.deepToString(arr)); // [[3, 4, 5], [2, 3], [1]]
+
 
