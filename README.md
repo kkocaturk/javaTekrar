@@ -130,6 +130,14 @@ console.log("Hello world")
 - str.lastIndexOf("a")
 - str.lastIndexOf("a", 19)
 ---
+
+## 11. gün
+-
+
+
+
+
+
 ## 16. gün
 - OOP konsepti 
 - static variable local variable kapsamları ve kullanılabileceği seviyeler.
@@ -170,6 +178,7 @@ console.log("Hello world")
 yapılarak
 `D:\kurs\JavaProject>src\day18_multiDimensionalArrays\ `
 > yoluna gidilerek git add .\ClassWillBeLoad.java yapılır. 
+> git add .\ yapılırsa o folder altındaki tüm dosyalar yüklenir
 
 
 - binarySearch() için sort kullanılmalı.
