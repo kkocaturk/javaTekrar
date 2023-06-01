@@ -165,10 +165,12 @@ console.log("Hello world")
 
 ## 18.gün
 
-|  gitHUB'a yüklü projede oluşturulan directorylerden sadece bir kısmını gitHuB'a atmak istiyorsak,
+> gitHUB'a yüklü projede oluşturulan directorylerden sadece bir kısmını gitHuB'a atmak istiyorsak,
   ` D:\kurs\JavaProject> cd .\src\day18_multiDimensionalArrays\     `
 yapılarak
 `D:\kurs\JavaProject>src\day18_multiDimensionalArrays\ `
-- | yoluna gidilerek git add .\ClassWillBeLoad.java yapılır. 
+> yoluna gidilerek git add .\ClassWillBeLoad.java yapılır. 
 
+
+-
 
