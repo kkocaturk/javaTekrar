@@ -199,10 +199,13 @@ System.out.println("str'in yeni hali  rakamları çıkardı \"\\\\d\": " + str);
             - space olmayan tum karakterler
 
             bu ortak ozellikleri belirtmek icin Java regex tanimlamistir (regex:Regular Expressions)
-            \\s:space                   \\S:space olmayan herşey
+            \\s:space                
+            \\S:space olmayan herşey
             \\s+ yanyana birden fazla space
-            \\d digits                  \\D digit olmayan herşey
-            \\w harfler, sayılar ve _         \\W harf veya rakam olmayan herşey
+            \\d digits                  
+            \\D digit olmayan herşey
+            \\w harfler, sayılar ve _         
+            \\W harf veya rakam olmayan herşey
 
             - replaceAll'da regex kullanılır ama char kullanılmaz.
 
