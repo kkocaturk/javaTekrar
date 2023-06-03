@@ -6,6 +6,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**        List<String> harfler = new ArrayList<>(); // bos bir list olusturur
+ *         List<String> harfler = {""böyle","tanımlanmaz"}; // bos bir list olusturur
+ *            harfler.add("eklenecekString"); // element ekler.
+ *
+ */
 public class C02_ArrayList {
 
     public static void main(String[] args) {
@@ -43,6 +48,7 @@ public class C02_ArrayList {
         harfler.add("a");
 
         System.out.println(harfler); // [s, l, a]
+
 
     }
 }
