@@ -132,7 +132,12 @@ console.log("Hello world")
 ---
 
 ## 11. gün
--
+- String Manipulation
+-     String str = "Java candir";
+
+        System.out.println(str.isEmpty()); // false
+
+        System.out.println(str.isBlank());  //isBlank boşluklardan mı oluşur?  false
 
 
 
