@@ -139,9 +139,9 @@ console.log("Hello world")
 
         System.out.println(str.isBlank());  //isBlank boşluklardan mı oluşur?  false
 - String str;  // str olusturuldu ama deger atanmadi
-  null bir deger degildir
-  null bir pointer'dir,
-  yanina yazildigi non-primitive variable'a deger atanmadigini isaret eder
+-  null bir deger degildir
+-  null bir pointer'dir,
+-  yanina yazildigi non-primitive variable'a deger atanmadigini isaret eder
 
 - Java method icerisinde deger atamadan variable olusturulmasina izin verir
   // ama deger atamadan kullanilmasina izin vermez
@@ -157,11 +157,51 @@ console.log("Hello world")
 
         str = null; // str= "null" degil
         // null olarak isaretlenmis, degeri null atanmis degil
+-  System.out.println(str); // null
+> // System.out.println(str.concat("Java")); // Run time Error---NullPointerException
+> //System.out.println(str.length()); // Run time Error---NullPointerException
+
+        System.out.println(str + "Java"); // nullJava
+        String str2 = str + "Java";
+        System.out.println("str2 : " + str2); // nullJava
+
+        // int sayi = null; primitive variable'lara null degeri olmaz
+        Integer sayi = null;
+
+- str.replace('a','2')
+> String str = "Java Candir";
+>  System.out.println(str.replace('J', 'H')); // Hava Candir
+   System.out.println(str.replace("a", "")); // Jv Cndir
+
+- Burası önemli !!!
+-        String str = "J1a23va34  5C54and65ir87*/-";
+>System.out.println("str = " + str);
+str = str.replaceAll("\\d","");
+System.out.println("str'in yeni hali  rakamları çıkardı \"\\\\d\": " + str); //Java Candir
+
+>/*
+        Eger degistirmek istedigimiz metin tek bir metin degil,
+        ortak ozelligi olan farkli metinlerse
+
+            - tum sayilar
+            - sayi olmayanlarin tumu
+            - tum space'ler
+            - space olmayan tum karakterler
+
+            bu ortak ozellikleri belirtmek icin Java regex tanimlamistir (regex:Regular Expressions)
+            \\s:space                   \\S:space olmayan herşey
+            \\s+ yanyana birden fazla space
+            \\d digits                  \\D digit olmayan herşey
+            \\w harfler, sayılar ve _         \\W harf veya rakam olmayan herşey
+
+            - replaceAll'da regex kullanılır ama char kullanılmaz.
+
+         */
+- str= str.trim();
+- for (int i = 1; i <=10 ; i++) {
+   System.out.println(i +"- Java Candir");
+   }
 - 
-
-
-
-
 
 
 ## 16. gün
