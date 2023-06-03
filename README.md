@@ -138,6 +138,27 @@ console.log("Hello world")
         System.out.println(str.isEmpty()); // false
 
         System.out.println(str.isBlank());  //isBlank boşluklardan mı oluşur?  false
+- String str;  // str olusturuldu ama deger atanmadi
+- null bir deger degildir
+- null bir pointer'dir,
+- yanina yazildigi non-primitive variable'a deger atanmadigini isaret eder
+
+- Java method icerisinde deger atamadan variable olusturulmasina izin verir
+  // ama deger atamadan kullanilmasina izin vermez
+
+        // System.out.println(str); CTE
+        // str.concat("Java"); CTE
+
+        // Bazen programlarda variable'lar olusturulur ama
+        // daha sonra deger atanacagi icin deger atamasi yapilmaz
+        // deger atamasi yapilmadan listeleme bile CTE verdigi icin
+        // deger verilmedigini isaretleyecek, ama CTE olusmasini engelleyecek
+        // bir cozum olarak null pointer olusturumustur
+
+        str = null; // str= "null" degil
+        // null olarak isaretlenmis, degeri null atanmis degil
+- 
+
 
 
 
