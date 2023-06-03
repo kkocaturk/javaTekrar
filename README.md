@@ -216,7 +216,9 @@ System.out.println("str'in yeni hali  rakamları çıkardı \"\\\\d\": " + str);
 - for (int i = 1; i <=10 ; i++) {
    System.out.println(i +"- Java Candir");
    }
-- 
+
+## 12.gün
+
 
 
 ## 16. gün
