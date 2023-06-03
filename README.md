@@ -138,48 +138,58 @@ console.log("Hello world")
         System.out.println(str.isEmpty()); // false
 
         System.out.println(str.isBlank());  //isBlank boşluklardan mı oluşur?  false
-- String str;  // str olusturuldu ama deger atanmadi
--  null bir deger degildir
--  null bir pointer'dir,
--  yanina yazildigi non-primitive variable'a deger atanmadigini isaret eder
 
-- Java method icerisinde deger atamadan variable olusturulmasina izin verir
-  // ama deger atamadan kullanilmasina izin vermez
+` String str;  // str olusturuldu ama deger atanmadi`
+- null bir deger degildir
+- null bir pointer'dir,
+- yanina yazildigi non-primitive variable'a deger atanmadigini isaret eder
 
+- Java method icerisinde deger atamadan variable olusturulmasina izin verir  
+- ama deger atamadan kullanilmasina izin vermez
+```
         // System.out.println(str); CTE
         // str.concat("Java"); CTE
+```
 
-        // Bazen programlarda variable'lar olusturulur ama
-        // daha sonra deger atanacagi icin deger atamasi yapilmaz
-        // deger atamasi yapilmadan listeleme bile CTE verdigi icin
-        // deger verilmedigini isaretleyecek, ama CTE olusmasini engelleyecek
-        // bir cozum olarak null pointer olusturumustur
 
-        str = null; // str= "null" degil
-        // null olarak isaretlenmis, degeri null atanmis degil
--  System.out.println(str); // null
-> // System.out.println(str.concat("Java")); // Run time Error---NullPointerException
-> //System.out.println(str.length()); // Run time Error---NullPointerException
+        - Bazen programlarda variable'lar olusturulur ama
+        - daha sonra deger atanacagi icin deger atamasi yapilmaz
+        - deger atamasi yapilmadan listeleme bile CTE verdigi icin
+        - deger verilmedigini isaretleyecek, ama CTE olusmasini engelleyecek
+        - bir cozum olarak null pointer olusturumustur
 
-        System.out.println(str + "Java"); // nullJava
-        String str2 = str + "Java";
-        System.out.println("str2 : " + str2); // nullJava
+- 
+       ` str = null; // str= "null" degil `
+- null olarak isaretlenmis, degeri null atanmis degil
+  ```
+   System.out.println(str); // null 
+   System.out.println(str.concat("Java")); // Run time Error---NullPointerException
+   System.out.println(str.length()); // Run time Error---NullPointerException
 
-        // int sayi = null; primitive variable'lara null degeri olmaz
-        Integer sayi = null;
+    System.out.println(str + "Java"); // nullJava
+    String str2 = str + "Java";
+    System.out.println("str2 : " + str2); // nullJava
 
-- str.replace('a','2')
-> String str = "Java Candir";
->  System.out.println(str.replace('J', 'H')); // Hava Candir
+    // int sayi = null; primitive variable'lara null degeri olmaz
+    Integer sayi = null; 
+  ``` 
+
+
+-  str.replace('a','2')
+```
+   String str = "Java Candir";
+   System.out.println(str.replace('J', 'H')); // Hava Candir
    System.out.println(str.replace("a", "")); // Jv Cndir
+```
 
 - Burası önemli !!!
--        String str = "J1a23va34  5C54and65ir87*/-";
->System.out.println("str = " + str);
+```
+String str = "J1a23va34  5C54and65ir87*/-";
+System.out.println("str = " + str);
 str = str.replaceAll("\\d","");
 System.out.println("str'in yeni hali  rakamları çıkardı \"\\\\d\": " + str); //Java Candir
-
->/*
+```
+>
         Eger degistirmek istedigimiz metin tek bir metin degil,
         ortak ozelligi olan farkli metinlerse
 
@@ -197,6 +207,8 @@ System.out.println("str'in yeni hali  rakamları çıkardı \"\\\\d\": " + str);
             - replaceAll'da regex kullanılır ama char kullanılmaz.
 
          */
+> 
+
 - str= str.trim();
 - for (int i = 1; i <=10 ; i++) {
    System.out.println(i +"- Java Candir");
