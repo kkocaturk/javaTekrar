@@ -139,9 +139,9 @@ console.log("Hello world")
 
         System.out.println(str.isBlank());  //isBlank boşluklardan mı oluşur?  false
 - String str;  // str olusturuldu ama deger atanmadi
-- null bir deger degildir
-- null bir pointer'dir,
-- yanina yazildigi non-primitive variable'a deger atanmadigini isaret eder
+  null bir deger degildir
+  null bir pointer'dir,
+  yanina yazildigi non-primitive variable'a deger atanmadigini isaret eder
 
 - Java method icerisinde deger atamadan variable olusturulmasina izin verir
   // ama deger atamadan kullanilmasina izin vermez
