@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * algoritma ve array Arraylist arasında işlem yapma
+ */
 public class C05_TekrarlardanKurtulma {
     public static void main(String[] args) {
 
