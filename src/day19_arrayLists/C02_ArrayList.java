@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**        List<String> harfler = new ArrayList<>(); // bos bir list olusturur
- *         List<String> harfler = {""böyle","tanımlanmaz"}; // bos bir list olusturur
+ *         List<String> harfler = {""böyle","tanımlanmaz"}; //array tanımlama ile karıştırma böyle kullanılmaz
  *            harfler.add("eklenecekString"); // element ekler.
  *
  */

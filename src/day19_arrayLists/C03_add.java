@@ -15,7 +15,7 @@ public class C03_add {
     public static void main(String[] args) {
         /*
             List data turu olarak primitive kabul etmez
-            List<int> sayilar2=new ArrayList<>(); // kullanılamaz!
+            List<int> sayilar2=new ArrayList<>(); // kullanılamaz! <Integer> olmalı
          */
 
         List<Integer> sayilar = new ArrayList<>();
