@@ -280,33 +280,38 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
 
 ## 19.gün
 ```
->    List<String> harfler = new ArrayList<>(); // bos bir list olusturur
->    List<String> harfler = {""böyle","tanımlanmaz"}; // bos bir list olusturur
->    harfler.add("eklenecekString"); // element ekler.
+    List<String> harfler = new ArrayList<>(); // bos bir list olusturur
+    List<String> harfler = {""böyle","tanımlanmaz"}; // bos bir list olusturur
+    harfler.add("eklenecekString"); // element ekler.
 
-> List<Integer> sayilar = new ArrayList<>(); tanımlama
-> - sayilar.add(3);
-> - sayilar.add(1,3);
-> - sayilar.addAll(ekler);
-> - sayilar.addAll(2,ekler);
+ List<Integer> sayilar = new ArrayList<>(); tanımlama
+   sayilar.add(3);
+   sayilar.add(1,3);
+   sayilar.addAll(ekler);
+   sayilar.addAll(2,ekler);
 ```
 ```
   List<String> harfler = new ArrayList<>(); için
+        
          Object parametresiyle .remove() metodu kullanılırsa true, false döner
          harfler.remove("B") -> ilk bulunan "B" String'ini siler.
-        index parametresiyle .remove() metodu kullanılırsa silinen element  döner
+         index parametresiyle .remove() metodu kullanılırsa silinen element  döner
+        
 ```
- 
-> List<Integer> sayilar = new ArrayList<>(); içinde get() ve set() kullanımı
->  System.out.println(sayilar.get(0)); // 3
->  System.out.println(sayilar.set(2, 12)); // 2 --> [3, 5, 2]idi 2. index'i 12 yaptık [3, 5, 12] oldu. değiştirdiği 2. indexteki değer olan 2'yi döner
 
+```
+ List<Integer> sayilar = new ArrayList<>(); içinde get() ve set() kullanımı
+  System.out.println(sayilar.get(0)); // 3
+  System.out.println(sayilar.set(2, 12)); // 2 --> [3, 5, 2]idi 2. index'i 12 yaptık [3, 5, 12] oldu. değiştirdiği 2. indexteki değer olan 2'yi döner
+```
 - algoritma ve array Arraylist arasında işlem yapma
- 
->  List<Integer> sayilar = new ArrayList<>(); içinde get() ve set() kullanımı
-> System.out.println(sayilar.get(0)); // 3
->  System.out.println(sayilar.set(2, 12)); // 2 --> [3, 5, 2]idi 2. index'i 12 yaptık [3, 5, 12] oldu. değiştirdiği 2. indexteki değer olan 2'yi döner
-
-> List<Integer> sayilar = new ArrayList<>(); [3, 5, 2, 20, 10, 50] 
-> sayilar.subList(3,5); [20, 10]  ->güncelleme yapmaz,yeniListe atamak lazım.
-> List<Integer> yeniList= sayilar.subList(3,5);
+``` 
+  List<Integer> sayilar = new ArrayList<>(); içinde get() ve set() kullanımı
+  System.out.println(sayilar.get(0)); // 3
+  System.out.println(sayilar.set(2, 12)); // 2 --> [3, 5, 2]idi 2. index'i 12 yaptık [3, 5, 12] oldu. değiştirdiği 2. indexteki değer olan 2'yi döner
+```
+```
+ List<Integer> sayilar = new ArrayList<>(); [3, 5, 2, 20, 10, 50] 
+ sayilar.subList(3,5); [20, 10]  ->güncelleme yapmaz,yeniListe atamak lazım.
+ List<Integer> yeniList= sayilar.subList(3,5);
+```
