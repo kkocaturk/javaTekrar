@@ -279,22 +279,23 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
 - System.out.println(Arrays.deepToString(arr)); // [[3, 4, 5], [2, 3], [1]]
 
 ## 19.gün
+```
 >    List<String> harfler = new ArrayList<>(); // bos bir list olusturur
 >    List<String> harfler = {""böyle","tanımlanmaz"}; // bos bir list olusturur
 >    harfler.add("eklenecekString"); // element ekler.
 
 > List<Integer> sayilar = new ArrayList<>(); tanımlama
-> sayilar.add(3);
-> sayilar.add(1,3);
-> sayilar.addAll(ekler);
-> sayilar.addAll(2,ekler);
-
-
->  List<String> harfler = new ArrayList<>(); için
->          Object parametresiyle .remove() metodu kullanılırsa true, false döner
->          harfler.remove("B") -> ilk bulunan "B" String'ini siler.
->          index parametresiyle .remove() metodu kullanılırsa silinen element  döner
-
+> - sayilar.add(3);
+> - sayilar.add(1,3);
+> - sayilar.addAll(ekler);
+> - sayilar.addAll(2,ekler);
+```
+```
+  List<String> harfler = new ArrayList<>(); için
+         Object parametresiyle .remove() metodu kullanılırsa true, false döner
+         harfler.remove("B") -> ilk bulunan "B" String'ini siler.
+        index parametresiyle .remove() metodu kullanılırsa silinen element  döner
+```
  
 > List<Integer> sayilar = new ArrayList<>(); içinde get() ve set() kullanımı
 >  System.out.println(sayilar.get(0)); // 3
