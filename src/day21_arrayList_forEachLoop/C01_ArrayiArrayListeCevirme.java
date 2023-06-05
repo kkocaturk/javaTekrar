@@ -3,6 +3,14 @@ package day21_arrayList_forEachLoop;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+/**
+ * Array'den .aslist() metodu kullanılarak elde edilen Arraylistler birlikte hareket eder
+ * yerine göre avantaj yerine göre dezavantaj
+ * .asList method'uyla arrayden ArrayList'e geçerse ArrayList mantığına aykırı olarak ArrayList'in boyutu artırılamaz azalamaz
+ * Array değişirse Arraylist ArrayList değişirse Array'de arka planda beraber değişir her ne kadar ayrı objeler olsa da .
+ * uzunluğu büyük bir array list olarak kullanılacaksa kullanılabilir ama ekle çıkar yapmayacaksak mantıklı
+ * değişince 2side değişir.
+ */
 
 public class C01_ArrayiArrayListeCevirme {
     public static void main(String[] args) {

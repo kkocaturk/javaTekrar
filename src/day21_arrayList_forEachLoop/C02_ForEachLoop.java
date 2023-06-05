@@ -1,5 +1,11 @@
 package day21_arrayList_forEachLoop;
-
+/*
+int toplam=0;
+for( int each : arr){
+toplam + = each;
+}
+for each kullanımı
+ */
 public class C02_ForEachLoop {
 
     public static void main(String[] args) {
@@ -18,10 +24,10 @@ public class C02_ForEachLoop {
         int[] arr = {3,5,6,7,3,2,3,5,8,7,1,2,3,4,5,8};
 
 
-        // arr'in tum elementlerinin toplamini yazdirin
+        // arr'in tum elementlerinin toplamini yazdirin -- 5c'Ye git bütün öğrencileri getir.
 
         int toplam =0;
-        for (int each: arr
+        for (int each: arr   //arrdeki btün int ları getirir. Hepsini getirir ama hangi sırayla geldiğini bilemeyiz.
              ) {
             toplam += each;
         }
