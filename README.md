@@ -246,6 +246,7 @@ System.out.println("str'in yeni hali  rakamları çıkardı \"\\\\d\": " + str);
    Arrays.sort(arr1);
 ```
 - Arrays.binarySearch() ↓ kullanımı //sort yapılmadan binarySearch yapılırsa sağlıklı çalışmaz.!
+- Arrays.sort(arr1);
 ```
    int[] arr1= {3,9,6,1,7};
    Arrays.sort(arr1);
@@ -271,7 +272,7 @@ String[] kelimeler= str.split(" ");
 System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, suphesi, olan, var, mi?]
 ``` 
 
-- str.split("can");
+- str.split("can"); -> String[] döner
 
 ### MultiDimensionalArray
 ` int[][] arr = {{3,4,5},{2,3},{1}}; `
@@ -281,7 +282,7 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
 ## 19.gün
 ```
     List<String> harfler = new ArrayList<>(); // bos bir list olusturur
-    List<String> harfler = {""böyle","tanımlanmaz"}; // bos bir list olusturur
+    List<String> harfler = {""böyle","tanımlanmaz"}; //array tanımlama ile karıştırma böyle kullanılmaz
     harfler.add("eklenecekString"); // element ekler.
 
  List<Integer> sayilar = new ArrayList<>(); tanımlama
@@ -314,4 +315,73 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
  List<Integer> sayilar = new ArrayList<>(); [3, 5, 2, 20, 10, 50] 
  sayilar.subList(3,5); [20, 10]  ->güncelleme yapmaz,yeniListe atamak lazım.
  List<Integer> yeniList= sayilar.subList(3,5);
+ /*
+            Eger sayilardan olusan bir list varsa
+            remove method'una yazacagimiz sayiyi index olarak kabul eder
+
+            sayilar.remove()-> Integer ArrayList'i için silmek için Object parametreli kullanmak için önce objeye atanır sonra işlem yapılır.
+
+            Eger sayiyi silmek isterseniz
+            remove method'undan once o sayiyi bir objeye atayip
+            remove method'unda obje ismini yazabiliriz
+ */
+  System.out.println(sayilar); // [1, 3, 18, 2]
+        sayilar.remove(1);  -->index: param
+        System.out.println(sayilar); // [1, 18, 2]
+
+        // 1'i silelim
+
+        Integer silinecekSayi = 1; //değişkene atanmalı!!!
+
+        sayilar.remove(silinecekSayi); -->Object: param -->18ideğil 1'i sildi
+        System.out.println(sayilar); // [ 18, 2]
 ```
+
+## 20.gün
+- List<Integer> sayilar=new ArrayList<>(); tanımlama
+-  listede element olarak 3 var mi ?
+`   System.out.println(sayilar.contains(3)); // true `
+- sayilar.clear();
+- sayilar1.equals(sayilar2); --> ArrayList'te equals() hem değer hem index kontrol eder!
+- sayilar1 : [3, 8, 1, 2]
+- sayilar2 : [3, 1, 8, 2]
+- sayilar1.equals(sayilar2); //false
+
+- sayilar.sort(); başka bi durum. bunu yerine ↓ kullanılır
+- Nasıl ki Array'i yazdırırken Arrays.toString(arr) yapıyorsak, ArrayList'i yazdırırken Collection.sort(sayilar); kullanılır.!!!
+- Collections.sort(sayilar1);// Liste parent'i Collections sort edilebilir.
+- Collections.sort(sayilar2);
+- sayilar1 : [1, 2, 3, 8]
+- sayilar2 : [1, 2, 3, 8]
+- true
+
+```
+        List<String> isimler=new ArrayList<>();
+        System.out.println(isimler); // [Kubra, Mustafa, Emre, Ferhat, Erdal]
+
+        // 2.index'deki elementi yazdirin
+
+        System.out.println(isimler.get(2)); // Emre
+
+        // Ferhat'in index'ini yazdirin
+
+        System.out.println(isimler.indexOf("Ferhat")); // 3
+
+
+        System.out.println(isimler.lastIndexOf("Ferhat")); // 3
+
+
+        System.out.println(isimler.indexOf("Hilal")); // -1
+        System.out.println(isimler.lastIndexOf("Gokhan")); // -1
+        
+        System.out.println(isimler); // [Kubra, Mustafa, Emre, Ferhat, Erdal, Mustafa]
+
+
+        System.out.println(isimler.indexOf("Mustafa")); // 1
+
+
+        System.out.println(isimler.lastIndexOf("Mustafa")); // 5
+```
+
+## 21. gün
+-
