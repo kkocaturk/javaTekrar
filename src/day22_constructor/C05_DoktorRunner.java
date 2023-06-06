@@ -7,7 +7,7 @@ public class C05_DoktorRunner {
         doktor1.isim= "Kemal";
         doktor1.yas=40;
 
-        System.out.println(doktor1.soyisim); // S atanmamis
+        System.out.println(doktor1.soyisim); // Soyisim atanmamis
         System.out.println(doktor1.yas); // 40
 
         
