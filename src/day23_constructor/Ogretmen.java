@@ -9,6 +9,7 @@ public class Ogretmen {
     public Ogretmen() {
     }
 
+
             1. default constructor görünmez
              - Arka planda çalışan java kendisi oluşturur
              - parametresi  ve blok içi boştur.
@@ -16,6 +17,7 @@ public class Ogretmen {
     */
 
     /*
+
       public Ogretmen(){
         isim="Hasan";
         soyisim="Kul";
@@ -31,6 +33,7 @@ public class Ogretmen {
     */
 
 /*
+
     public Ogretmen(String isim,String soyisim,String brans){
             this.isim=isim;
             this.soyisim=soyisim;
