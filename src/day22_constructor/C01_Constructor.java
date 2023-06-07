@@ -22,6 +22,9 @@ public class C01_Constructor {
             Bu class'lar kaliphane gibi calisir
             Yani o class'dan ayni ozelliklere sahip objeler uretmemizi saglar
 
+                Constructor 'da mutlaka olması gereken iki özellik
+                    1-Ismi mutlaka Class ismi ile aynı olmalıdır
+                    2- Return type'ı olmamalıdır.  --> Class ismi aynı olup return type'ı varsa o bir metottur. Constructor değil!!
 
          */
 
