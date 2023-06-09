@@ -384,4 +384,144 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
 ```
 
 ## 21. gün
--
+- Array ArrayList dönüşümü
+- foreach loop
+* Array'den .aslist() metodu kullanılarak elde edilen Arraylistler birlikte hareket eder
+* yerine göre avantaj yerine göre dezavantaj
+* .asList method'uyla arrayden ArrayList'e geçerse ArrayList mantığına aykırı olarak ArrayList'in boyutu artırılamaz azalamaz
+* Array değişirse Arraylist ArrayList değişirse Array'de arka planda beraber değişir her ne kadar ayrı objeler olsa da .
+* uzunluğu büyük bir array list olarak kullanılacaksa kullanılabilir ama ekle çıkar yapmayacaksak mantıklı
+* değişince 2side değişir.
+
+## 22. gün
+- Bir obje ancak bir class'dan olusturulabilir.
+- Bir objeyi olusturdugumuz class, ayni zamanda o objenin data turudur.
+
+ - Her obje olusturuldugu class'in ozelliklerini tasir
+
+  - Eger bir programda, ortak ozelliklere sahip
+  - objeler uretmek uzere tasarladiginiz bir class varsa main method olmasi SART DEGILDIR
+  - class'lar kaliphane gibi calisir
+  -  Yani o class'dan ayni ozelliklere sahip objeler uretmemizi saglar
+
+  - Constructor 'da mutlaka olması gereken iki özellik
+  -    1-Ismi mutlaka Class ismi ile aynı olmalıdır
+  -    2- Return type'ı olmamalıdır.  --> Class ismi aynı olup return type'ı varsa o bir metottur. Constructor değil!!
+
+ 
+        ornegin bir hastane programinda,
+        hastanede calisacak Hemsirelerin hangi bilgilerini tutmak istiyorsak,
+        hangi method'lari hemsireler kullanmak istiyorsak
+        bir hemsire class'i olusturup
+        tum bu ozellikleri(variable ve method'lari) o class'da olustururuz
+
+        programda ne zaman bir hemsireye ihtiyac olsa
+        hemsire class'indan obje olustururuz
+        boylece otomatik olarak tum ozelliklere sahip olur
+
+        Eger biz istedigimiz parametrelere sahip bir constructor olusturmazsak
+        Java class'dan obje olusturulabilmesi icin,
+        class'a default bir constructor koyar.
+
+        Default constructor GORUNMEZ,
+        parametresi yoktur, cons. body'si bostur
+
+```
+        C02_Hemsire (){
+
+        }
+
+        Biz de istedigimiz parametrelere sahip,
+        istedigimiz kadar constructor olusturabiliriz
+
+        COK ONEMLI : Eger biz bir constructor olusturursak
+                     yani class'da gozle gorunen bir constructor varsa
+                     Java default constructor'i siler
+                     Bizim olusturdugumuz hic bir constructor'a default constructor DENEMEZ
+
+     
+```
+- bir obje olustururken parametre olarak hic bir deger girilmezse 
+*   olusturulan obje, olusturuldugu class'daki variable'lara atanan degerleri alir
+*  eger obje olusturulan class'da deger atamasi yoksa, Java default degerleri atar
+
+## 23.Gün
+- Constructor kullanımları
+- static keyword
+- public Ogretmen() {
+  }
+
+```
+            1. default constructor görünmez
+             - Arka planda çalışan java kendisi oluşturur
+             - parametresi  ve blok içi boştur.
+
+    
+
+    
+
+      public Ogretmen(){
+        isim="Hasan";
+        soyisim="Kul";
+        brans="Mat";
+    }
+
+     2. Parametresiz Constructor
+        - Default Cons ile aynı görünümdedir
+        - biz oluştururuz
+        - blok kısmında atama yapabliriz DEFault Cons'tan önemli bir farkı <ama tercih edilmez>
+        çünkü her oluşan obje aynı değerleri almış olur.
+
+    
+
+
+
+    public Ogretmen(String isim,String soyisim,String brans){
+            this.isim=isim;
+            this.soyisim=soyisim;
+            this.brans=brans;
+        }
+
+    3. Parametreli Constructor
+        - Yukarıdaki dezavantajları giderir.
+        -Constructor içinde parametre olarak gönderdiğimiz değerleri
+     instance variable'lara atayarak bizi her bir değer için tek tek atama yapma zorunluluğundan kurtarır.
+        - Parametreli Constructor oluşturduktan sonra parametresiz Cons
+        ihtiyacımız varsa default cons gibi bir cons oluşturmamız gerekir.!!
+```
+
+## 24 . gün
+- static keyword static block
+- Constructor ve default/non-static blocks 
+- PassByValue 
+
+## 25. gün
+- PassByValue
+
+- Mutable kararsız, değişebilir;
+- ArrayList
+- List yapılar
+- StringBuilder
+- StringBuffer
+
+
+- Immutable kararlı, değişmez örnekler
+- String
+- Wrapper classlar Integer, Boolean
+- primitive types (int, double, float, short,long, boolean,byte) 
+-      Java'da bir class ve oclass'dan olusturulan objeler
+            ya mutable'dir, ya da immutable'dir.
+
+            Java metinsel ifadeleri atayabilecegimiz 3 class olusturmustur
+            String  --- immutable
+            StringBuilder --- mutable
+            StringBuffer --- mutable
+
+            immutable bir class'dan olusturulan objeler de immutable'dir
+            String immutable oldugundan
+            ayni str objesine yeni deger atandiginda Java eski degeri DEGISTIREMEZ
+            bunun yerine istenen yeni degere sahip yeni bir obje olusturur
+            ve str 'in pointer'ini yeni objeye yoneltir.
+
+            kullanilmayan eski objeler
+            Garbage Collector tarafindan toplanmak uzere beklerler
