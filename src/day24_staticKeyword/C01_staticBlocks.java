@@ -1,4 +1,10 @@
 package day24_staticKeyword;
+/*
+program çalışınca önce statik bloklar sırayla çalışır
+obje oluşturulunca önce default blok sonra Constructor çalışır
+
+
+ */
 
 public class C01_staticBlocks {
 
