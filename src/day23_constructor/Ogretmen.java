@@ -44,8 +44,8 @@ public class Ogretmen {
         - Yukarıdaki dezavantajları giderir.
         -Constructor içinde parametre olarak gönderdiğimiz değerleri
      instance variable'lara atayarak bizi her bir değer için tek tek atama yapma zorunluluğundan kurtarır.
-        - Parametreli COnstructor oluşturduktan sonra parametresiz Cons
-        ihtiyacımız varsa default cons gibi bir cons olulturmamız gerekir.!!
+        - Parametreli Constructor oluşturduktan sonra parametresiz Cons
+        ihtiyacımız varsa default cons gibi bir cons oluşturmamız gerekir.!!
 
  */
 
