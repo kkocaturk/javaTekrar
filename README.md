@@ -218,6 +218,64 @@ System.out.println("str'in yeni hali  rakamları çıkardı \"\\\\d\": " + str);
    }
 
 ## 12.gün
+- for loop
+- nested for loop
+
+## 13.gün
+
+- method oluşturma
+  Method olusturma asamalari
+  1- public static standart (simdilik)
+  2- olusturdugumuz method bize bir sonuc dondurecekse
+  dondurecegi sonucun data turunu yaz
+  3- method ismi
+  4- method parantezi () icine method'a gondermemiz gereken bilgileri
+  hangi variable ile gonderecegimizi yaz (parametre)
+  5- dondurulmesi istenen islemi yap
+  6- return keyword kullanarak dondurulmesi istenen degeri dondur
+
+## 14. gün
+- Metot overloading
+Bir class'da ayni isme sahip 
+farkli islem yapan method'lar olabilir
+Java bu method'lardan hangisinin calisacagina
+parametrelere gore karar verir
+
+- Bir class'da ismi ayni, parametreleri farkli method'lar olmasina
+  Method OVERLOADING denir.
+
+- Java overloading kurallari
+  1- isim ve parametreleri ayni olan birden fazla method olusturulamaz
+  2- data turleri farkli olan parametrelerin yerlerini degistirirsek
+  java yeni bir method olarak kabul eder (int, double) (double,int)
+
+- Overloading olan class'larda
+- Java hangi method'un calistirilacagina su sekilde karar verir
+
+1. cagrilan isimde method var mi ?
+2. method call'da kullanilan arguments ile method'lardaki
+   parametrelerin %100 uyumlu oldugu var mi ?
+3. argument ile parametre ayni olmasa bile
+   verilen argumentleri kabul edecek parametre var mi ?
+4. Casting ile birden fazla method'u kullanabiliyorsa
+   daha az casting ile calisacak method'u kullanir
+
+-  baslangic ve bitis degeri belli olan
+   veya kac kere tekrar edilecegi bilinen loop'larda
+   for loop ideal olarak kullanilabilir
+
+- Ancak tekrar sayisi belli olmayan
+baslangic veya bitisi baska bir variable'a bagli olan durumlarda
+for loop yerine while loop tercih edilir
+
+- while loop
+
+
+## 15. gün
+
+
+
+
 
 
 
@@ -525,3 +583,10 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
 
             kullanilmayan eski objeler
             Garbage Collector tarafindan toplanmak uzere beklerler
+
+## 26. gün
+- LocalTime
+- LocalDate
+- LocalDateTime
+- DateTimeFormatter
+- Varargs ve dikkat edilecekler

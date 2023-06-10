@@ -40,7 +40,6 @@ public class C02_ArrayList {
                 */
 
         List<String> harfler = new ArrayList<>(); // bos bir list olusturur
-
         System.out.println(harfler); // []
 
         harfler.add("s");

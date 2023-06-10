@@ -2,6 +2,22 @@ package day26_localTime_varargs;
 
 import java.util.Arrays;
 
+/*
+Varargs Dikkat edilecekler
+1- 2 method icin her ne kadar parametre sayisi farkli olsa da
+    varargs'in yapisindan dolayi  int a, int... b ile int..b
+    arasinda argument kabulu acisindan fark yoktur
+
+2- son sayiyi ayirmak istesek ?
+           varargs eklenen tum parametreleri kendisi almak ister
+
+           bundan oturu bir method'da parametre olarak
+           varargs kullanilacaksa, EN SON parametre olarak kullanilmalidir
+
+3- bir method'da parametre olarak 2 varargs KULLANILAMAZ
+           cunku varargs son parametre olmalidir
+           2 varargs olursa biri sonuncu olamayacagi icin CTE verir
+ */
 public class C09_VarargsDikkatEdilecekler {
     public static void main(String[] args) {
 

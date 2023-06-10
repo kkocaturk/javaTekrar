@@ -43,3 +43,28 @@ public class C03_ImmutableClasses {
         System.out.println(s);
     }
 }
+/*
+Bu program, Java'da immutable (değiştirilemez) ve mutable (değiştirilebilir) sınıflar arasındaki farkı göstermektedir
+ve özellikle String, StringBuilder ve StringBuffer sınıflarını ele almaktadır.
+
+
+İlk olarak, programda String sınıfı kullanılarak str adında bir değişken oluşturulur ve "Java candir" metnini içerir.
+String sınıfı immutable olduğundan, mevcut bir String nesnesine yeni bir değer atandığında, Java eski değeri değiştiremez.
+Bunun yerine, istenen yeni değere sahip yeni bir String nesnesi oluşturulur ve str değişkeni bu yeni nesneye yönlendirilir.
+Bu nedenle, str.toLowerCase() ifadesi, str'nin küçük harfli bir kopyasını döndürür ve orijinal str değişmez.
+Aynı şekilde, str.toUpperCase() ifadesi de str'nin büyük harfli bir kopyasını döndürür ve orijinal str değişmez.
+
+
+Daha sonra, String sınıfının farklı bir örneği olan s adında bir değişken oluşturulur ve "Hava" metnini içerir.
+Ardından, bir döngü yardımıyla bu metnin sonuna "." karakterini eklenir.
+Ancak, her bir ekleme işlemi, bir immutable String nesnesinin kopyasını oluşturur ve bu nedenle bellekte yeni bir String nesnesi yaratılır.
+Bu, her döngü adımında yeni bir String nesnesi oluşturulduğu anlamına gelir. Sonuç olarak, döngü tamamlandığında toplamda 101 adet String nesnesi oluşur.
+Bu durumda, s değişkeni en son döngü adımındaki değeriyle güncellenir ve sonucunda "Hava.........." metnini içerir.
+
+Bu örnek, String sınıfının immutable olduğunu ve her değişikliğin yeni bir String nesnesi oluşturduğunu göstermektedir.
+Bu, bellek kullanımı ve performans açısından dikkate alınması gereken bir durumdur.
+Bu nedenle, metinsel ifadeler üzerinde sık sık değişiklik yapmanız gerekiyorsa,
+StringBuilder veya StringBuffer sınıflarını tercih etmek daha verimli olabilir,
+çünkü bunlar mutable (değiştirilebilir) sınıflardır ve mevcut nesneleri değiştirirler, yeni nesneler oluşturmak yerine.
+
+ */
