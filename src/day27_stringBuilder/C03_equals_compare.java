@@ -16,6 +16,7 @@ public class C03_equals_compare {
 
 
         System.out.println(sb1.equals(sb2)); // false
+
         /* StringBuilder'da icerik ayni olsa bile equals method'u false doner
            Cunku StringBuilder Class'inda equals method'u yoktur
            equals method'unu parent class'i olan Object Class'indan kullanir
@@ -30,7 +31,7 @@ public class C03_equals_compare {
         // compareTo() kullanilir
 
         System.out.println(sb1.compareTo(sb2)); // 0
-        // System.out.println(sb1.compareTo(str)); CTE
+        // System.out.println(sb1.compareTo(str)); //CTE
 
         StringBuilder sb3 = new StringBuilder("Hava");
         StringBuilder sb4 = new StringBuilder("Hara");
@@ -52,3 +53,47 @@ public class C03_equals_compare {
 
     }
 }
+/*
+Bu program, StringBuilder sınıfının equals() ve compareTo() metodlarını göstermektedir. İşlevleri açıkladığımızda:
+
+1 sb1 ve sb2 adında iki ayrı StringBuilder nesnesi oluşturulur ve str adında bir String oluşturulur.
+
+2 sb1 == sb2 ifadesi false döndürür çünkü == operatörü, referansları karşılaştırır
+ve StringBuilder nesneleri farklı referanslara sahiptir.
+
+3 sb1 == sb1 ifadesi true döndürür çünkü aynı StringBuilder nesnesini karşılaştırıyoruz.
+
+4 sb1.equals(sb2) ifadesi false döndürür çünkü StringBuilder sınıfı, equals() metodu için kendi implementasyonunu sağlamaz
+ve varsayılan olarak Object sınıfının equals() metodunu kullanır.
+Bu nedenle, referansları karşılaştırır ve aynı olmadığı için false döner.
+
+5 sb1.equals(str) ifadesi false döndürür çünkü StringBuilder ile String veri türleri karşılaştırılamaz.
+
+6 sb1.equals(sb1) ifadesi true döndürür çünkü aynı StringBuilder nesnesini kendisiyle karşılaştırıyoruz.
+
+7 sb1.compareTo(sb2) ifadesi 0 döndürür çünkü compareTo() metodu, StringBuilder nesnelerinin içeriklerini karşılaştırır
+ve içerikleri aynı olduğu için 0 döner.
+
+8 sb1.compareTo(sb3) ifadesi 2 döndürür çünkü ilk farklı karakter "v" ve "a"'dır
+ve "v" harfi alfabede "a" harfinden 2 adım ileridedir.
+
+9 sb1.compareTo(sb4) ifadesi 2 döndürür çünkü ilk farklı karakter "v" ve "r"'dır
+ve "v" harfi alfabede "r" harfinden 2 adım ileridedir.
+
+10 sb3.compareTo(sb4) ifadesi 4 döndürür çünkü ilk farklı karakter "v" ve "r"'dır
+ve "v" harfi alfabede "r" harfinden 4 adım geridedir.
+
+11 sb4.compareTo(sb3) ifadesi -4 döndürür çünkü ilk farklı karakter "r" ve "v"'dir
+ve "r" harfi alfabede "v" harfinden 4 adım ileridedir.
+
+Bu şekilde, equals() ve compareTo() metotlarını kullanarak
+StringBuilder nesnelerinin karşılaştırma işlemlerini gerçekleştirebilirsiniz.
+
+dikkat
+System.out.println(sb1.compareTo(str)); //CTE
+ neden CTE verir?
+
+sb1.compareTo(str) ifadesi derleme zamanı hatası (CTE - Compile Time Error) verir
+çünkü compareTo() metodunun parametre olarak StringBuilder nesnesi beklerken,
+siz String tipinde bir nesneyi geçirmeye çalışıyorsunuz.
+ */

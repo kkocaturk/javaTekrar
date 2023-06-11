@@ -590,3 +590,6 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
 - LocalDateTime
 - DateTimeFormatter
 - Varargs ve dikkat edilecekler
+
+## 27.gün 
+- 
