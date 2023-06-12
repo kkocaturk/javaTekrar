@@ -604,15 +604,26 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
 - LocalDateTime nesneleriyle Period class ile aradaki zamanı hesaplama 
 
 ```
-  LocalDateTime localDateTime = LocalDateTime.now();
-        Thread.sleep(3000,2);
-        LocalDateTime localDateTimeSonraki = LocalDateTime.now();
-
-
-        Period period = Period.between(localDateTime.toLocalDate(), localDateTimeSonraki.toLocalDate());
-        int days = period.getDays();
-        System.out.println("Geçen gün sayısı: " + days);
+    LocalDate dogumTarihi = LocalDate.of(1980,1,1);
+    LocalDate bugun= LocalDate.now();
+  
+    System.out.println("for me \n" +   " yıl : "+ Period.between(myBirthday,bugun).getYears() +
+                                          " ay : "+ Period.between(myBirthday,bugun).getMonths() +
+                                        " gün : "+ Period.between(myBirthday,bugun).getDays()
+                            ); 
 ```
+- epoch kulanımı 1970-01-01
+
+```
+      LocalDate epoch=LocalDate.EPOCH;
+      
+      long epochDay=1250L;
+      
+      LocalDate epochDay1250sonrasiDate=LocalDate.ofEpochDay(epochDay);
+      
+      System.out.println(epochDay1250sonrasiDate); //1973-06-04
+```
+
 - DateTimeFormatter
 - Varargs ve dikkat edilecekler
 
