@@ -588,6 +588,31 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
 - LocalTime
 - LocalDate
 - LocalDateTime
+- LocalDateTime nesneleriyle Duration class ile aradaki zamanı hesaplama 
+
+```
+        LocalTime localTime = LocalTime.now();
+         Thread.sleep(2000,999999); //metotda 999999 alır en fazla
+        LocalTime localTimeSonraki = LocalTime.now();
+
+
+        Duration duration = Duration.between(localTime, localTimeSonraki);
+        long seconds = duration.getSeconds();
+        System.out.println("Geçen süre (saniye): " + seconds);
+```
+
+- LocalDateTime nesneleriyle Period class ile aradaki zamanı hesaplama 
+
+```
+  LocalDateTime localDateTime = LocalDateTime.now();
+        Thread.sleep(3000,2);
+        LocalDateTime localDateTimeSonraki = LocalDateTime.now();
+
+
+        Period period = Period.between(localDateTime.toLocalDate(), localDateTimeSonraki.toLocalDate());
+        int days = period.getDays();
+        System.out.println("Geçen gün sayısı: " + days);
+```
 - DateTimeFormatter
 - Varargs ve dikkat edilecekler
 
