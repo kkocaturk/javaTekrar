@@ -8,8 +8,8 @@ public class deneme {
 
         C01 obj = new C01();
 
-        // obj.str = "Fava";  farkli package default access modifier
-        // C01.s="Fava"; farkli package default access modifier
+         // obj.str = "Fava"; //  farkli package default access modifier
+         // C01.s="Fava";  // farkli package default access modifier
 
         // obj.b=10; private access modifier
 
