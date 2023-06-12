@@ -21,14 +21,14 @@ public class C01 {
         // bir method icerisinde public, protected, private gibi access modifier'lar
         // veya static keyword KULLANILAMAZ
 
-        // System.out.println(b); static
+        //System.out.println(b);  // static
         System.out.println(c);
 
-        // str="Java"; static
+        // str="Java"; //static
         s="hava";
 
         a=10;
-        // d=20; static
+       // d=20; // static
     }
 
     void method1(){
