@@ -628,4 +628,19 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
 - Varargs ve dikkat edilecekler
 
 ## 27.gün 
-- 
+- ASCII table
+- StringBuilder 
+- .reverse()
+- == equals() compare()
+- StringBuilder metotları
+  - append() ->sona ekler
+  - insert() -> istenen konuma ekler  // sb1.insert(11,str,0,5);
+  - delete(4,5) -> verilen indisleri aralığını siler 
+  - deleteCharAt(2) -> o char'ı siler
+  - sb1.replace(12,15,"Can."); -> replace eder.
+``` 
+ StringBuilder sb2 = new StringBuilder("Java candir");
+ sb2.substring(5);//StringBuilser nesnesine String metotları uygulanırsa herhangi bir işlem yapmaz.
+```
+## 28.gün 
+-
