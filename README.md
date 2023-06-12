@@ -588,6 +588,42 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
 - LocalTime
 - LocalDate
 - LocalDateTime
+- LocalDateTime nesneleriyle Duration class ile aradaki zamanı hesaplama 
+
+```
+        LocalTime localTime = LocalTime.now();
+         Thread.sleep(2000,999999); //metotda 999999 alır en fazla
+        LocalTime localTimeSonraki = LocalTime.now();
+
+
+        Duration duration = Duration.between(localTime, localTimeSonraki);
+        long seconds = duration.getSeconds();
+        System.out.println("Geçen süre (saniye): " + seconds);
+```
+
+- LocalDateTime nesneleriyle Period class ile aradaki zamanı hesaplama 
+
+```
+    LocalDate dogumTarihi = LocalDate.of(1980,1,1);
+    LocalDate bugun= LocalDate.now();
+  
+    System.out.println("for me \n" +   " yıl : "+ Period.between(myBirthday,bugun).getYears() +
+                                          " ay : "+ Period.between(myBirthday,bugun).getMonths() +
+                                        " gün : "+ Period.between(myBirthday,bugun).getDays()
+                            ); 
+```
+- epoch kulanımı 1970-01-01
+
+```
+      LocalDate epoch=LocalDate.EPOCH;
+      
+      long epochDay=1250L;
+      
+      LocalDate epochDay1250sonrasiDate=LocalDate.ofEpochDay(epochDay);
+      
+      System.out.println(epochDay1250sonrasiDate); //1973-06-04
+```
+
 - DateTimeFormatter
 - Varargs ve dikkat edilecekler
 
