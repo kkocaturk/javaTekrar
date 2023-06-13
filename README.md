@@ -643,4 +643,4 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
  sb2.substring(5);//StringBuilser nesnesine String metotları uygulanırsa herhangi bir işlem yapmaz.
 ```
 ## 28.gün 
--
+-jklm
