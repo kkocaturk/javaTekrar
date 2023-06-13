@@ -642,5 +642,40 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
  StringBuilder sb2 = new StringBuilder("Java candir");
  sb2.substring(5);//StringBuilser nesnesine String metotları uygulanırsa herhangi bir işlem yapmaz.
 ```
-## 28.gün 
--
+## 28.gün
+- Access modifier
+- Java programlama dilindeki erişim belirleyicileri (access modifiers) doğru bir şekilde açıklanmıştır. 
+ İşte Java'da kullanılan erişim belirleyicileri ve kapsam alanları:
+
+- public: Bir sınıfın veya üyenin her yerden erişilebilir olmasını sağlar. 
+ Yani, başka sınıflardan, farklı paketlerden veya hatta farklı modüllerden erişim sağlanabilir.
+
+- private: Bir sınıfın veya üyenin sadece kendi sınıfı içinden erişilebilir olmasını sağlar.
+ Diğer sınıflar veya paketler bu öğeye erişemez. Özel erişim belirleyicisi, veri gizliliğini ve sınıfın iç yapısını korumak için kullanılır.
+
+- default (varsayılan): Eğer bir sınıf veya üyenin herhangi bir erişim belirleyicisi belirtilmemişse, varsayılan erişim belirleyici olarak kabul edilir. 
+ Bu durumda, sınıf veya üye yalnızca aynı paket içinden erişilebilir, farklı bir paketten erişim sağlanamaz.
+
+- protected: Bir sınıfın veya üyenin yalnızca kendi paketi veya alt sınıfları tarafından erişilebilir olmasını sağlar. 
+ Bu durumda, farklı paketlerden erişim sağlanamaz, ancak aynı paketteki sınıflar ve alt sınıflar tarafından erişilebilir.
+
+- Baska bir classdaki variable veya method'a ulasmak istedigimizde
+
+- ulasmak istedigimiz class uyesinin static olup olmamasi
+  erisim yontemini etkiler
+  static ise calssIsmi.uyeIsmi yazarken
+  static degilse obje olusturup objeIsmi.uyeIsmi
+
+- ulasmak istedigimiz uyenin access modifier'i ise
+  o uyeye ulasip ulasamayacagimizi belirler
+
+  ulasabilirsek o datayi okuyabilir veya o dataya yeni deger atayabiliriz
+
+- Eger bir variable icin read veya write ozelliklerinin
+  birbirinden ayrilmasi isteniyorsa
+  oncelikle access modifier ile kimsenin ulasamamasini saglayin
+
+- private yaparak kimsenin ulasamayacagini garantiye aldiktan sonra
+
+-  READ yetkisi vermek istediklerimiz icin getter() 
+- WRITE yetkisi vermek istediklerimiz icin setter() olusturmaliyiz
