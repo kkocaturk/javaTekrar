@@ -2,12 +2,9 @@ package day29_inheritance;
 
 public class C01 {
 
-
-
-
     public String isim;
-
     private int sayi;
+    private boolean happy;
 
     public boolean isHappy() {
         return happy;
@@ -16,8 +13,6 @@ public class C01 {
     public void setHappy(boolean happy) {
         this.happy = happy;
     }
-
-    private boolean happy;
 
     public int getSayi() {
         return sayi;
