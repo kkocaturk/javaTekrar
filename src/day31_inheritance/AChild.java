@@ -18,6 +18,9 @@ public class AChild extends GParent {
         // System.out.println(sayiGrandparent); static degil
 
         AChild objeChild = new AChild();
+        System.out.println("objeChild.childStr = " + objeChild.childStr);
+        System.out.println("objeChild.sayiParent = " + objeChild.sayiParent);
+        System.out.println("objeChild.sayiGrandparent = " + objeChild.sayiGrandparent);
 
 
         /*

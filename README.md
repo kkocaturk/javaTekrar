@@ -679,3 +679,28 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
 
 -  READ yetkisi vermek istediklerimiz icin getter() 
 - WRITE yetkisi vermek istediklerimiz icin setter() olusturmaliyiz
+ ## 29.gün
+- inheritance
+- 
+ ## 30.gün
+- inheritance
+- 
+ ## 31.gün
+- Biz gorunur bir constructor olusturdugumuzda
+Java'nin default constructor'i silmesine benzer olarak
+```
+    Extends keyword kullanilmis bir class'daki
+    herhangi bir constructor'in ilk satirinda
+    gozle gorunur bir constructor call yazilmissa
+    java default olarak koydugu super()'u siler
+
+
+    bir constructor'in icinde
+    sadece 1 tane constructor call olabilir
+    o da ilk satirda olmak zorundadir
+
+    Eger this(parametreler) veya super(parametreler) ile
+    constructor call yaptigimizda
+    yazdigimiz argument ile uyumlu parametreye sahip
+    bir constructor yoksa Java CTE verir
+```
