@@ -4,22 +4,22 @@ public class GKuslar extends FHayvanlar {
 
     public void kanat(){
 
-        System.out.println("kanatlidirlar");
+        System.out.println("kanatlidirlarG");
     }
 
     public void solunum(){
 
-        System.out.println("akcigerle nefes alirlar");
+        System.out.println("akcigerle nefes alirlarG");
     }
 
     public void gaga(){
 
-        System.out.println("gagalari vardir");
+        System.out.println("gagalari vardirG");
     }
 
     public void cogalma(){
 
-        System.out.println("yumurtayla cogalirlar");
+        System.out.println("yumurtayla cogalirlarG");
     }
 
 }
