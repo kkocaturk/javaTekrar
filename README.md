@@ -704,3 +704,7 @@ Java'nin default constructor'i silmesine benzer olarak
     yazdigimiz argument ile uyumlu parametreye sahip
     bir constructor yoksa Java CTE verir
 ```
+## 32. gün
+- inheritance güzel örnekler
+- inheritance içinde variable ve metot davranışları farklıdır.
+- 

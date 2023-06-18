@@ -3,19 +3,19 @@ package day32_inheritance_dataTypeKullanimi;
 public class HAvciKuslar extends GKuslar{
 
     public void hareket(){
-        System.out.println("ucarlar");
+        System.out.println("ucarlarH");
     }
 
     public void beslenme(){
-        System.out.println("et yerler");
+        System.out.println("et yerlerH");
     }
 
     public void pence(){
-        System.out.println("pencelidir");
+        System.out.println("pencelidirH");
     }
 
     public void gaga(){
-        System.out.println("sivri gagali");
+        System.out.println("sivri gagaliH");
     }
 
     public static void main(String[] args) {
@@ -108,3 +108,29 @@ public class HAvciKuslar extends GKuslar{
 
 
 }
+/*
+Bu kod örneğinde, üç farklı sınıf kullanılmıştır: "FHayvanlar", "GKuslar" ve "HAvciKuslar". Bu sınıflar arasında miras ilişkisi vardır.
+
+    "FHayvanlar" sınıfı, genel hayvanların sahip olduğu özellikleri ve davranışları temsil eder.
+    İçerisinde "hareket()", "solunum()", "beslenme()", "cogalma()" ve "omur()" gibi metotlar bulunmaktadır.
+    Bu metotlar, hayvanların hareket etme şekli, solunum yapma şekli, beslenme alışkanlıkları, üreme şekilleri ve ömürleri hakkında bilgi vermektedir.
+    Bu sınıf, diğer sınıflar tarafından miras alınmıştır.
+
+    "GKuslar" sınıfı, "FHayvanlar" sınıfını miras almaktadır.
+    Bu sınıf, kuşların genel özelliklerini ve davranışlarını temsil etmektedir.
+    Kendine özgü "kanat()", "solunum()", "gaga()" ve "cogalma()" metotları bulunmaktadır.
+    Bu metotlar, kuşların kanatlı olması, akciğerle solunum yapması, gagalarının olması ve yumurtayla üremesi gibi özelliklerini göstermektedir.
+
+    "HAvciKuslar" sınıfı ise "GKuslar" sınıfını miras almaktadır.
+    Bu sınıf, avcı kuşları temsil etmektedir.
+    "HAvciKuslar" sınıfı, "GKuslar" sınıfındaki metotların bazılarını override ederek kendi davranışlarını tanımlamıştır.
+    Örneğin, "hareket()" metodu "ucarlar" şeklinde, "beslenme()" metodu "et yerler" şeklinde ve "pence()" metodu "pencelidir" şeklinde ekrana yazdırma işlemlerini gerçekleştirmektedir.
+    Ayrıca "gaga()" metodu da kendi özgün davranışını yansıtmaktadır.
+
+    Kodun "main()" metodu içinde, farklı nesneler oluşturularak sınıflardaki davranışların kullanımı gösterilmektedir.
+    Hem sınıfın kendi metotları hem de miras alınan sınıflardaki metotlar çağrılarak ilgili davranışlar ekrana yazdırılmaktadır.
+    Miras sayesinde, üst sınıflarda tanımlanan davranışlar alt sınıflar tarafından kullanılabilmekte ve gerektiğinde değiştirilebilmektedir.
+
+    Son olarak, kodun altında yapılan açıklamalar "method overriding" ve "method hiding" kavramlarına değinmektedir.
+    Bu açıklamalar, metodun hangi sınıfta tanımlandığına ve override edilip edilmediğine bağlı olarak hangi davranışın gerçekleşeceğini belirtmektedir.
+    */
