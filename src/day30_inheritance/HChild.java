@@ -35,7 +35,7 @@ public class HChild extends GParent{
             Peki bu nasil oldu ?
 
             Her ne kadar objeyi child class'dan olustursak da
-            bu objenin parant ve grantParent class'larindaki ozellikleri alabilmesi icin
+            bu objenin parent ve grantParent class'larindaki ozellikleri alabilmesi icin
             o class'larin constructor'lari da calismak ZORUNDADIR
 
             java bu mecburi calismayi saglayabilmek icin

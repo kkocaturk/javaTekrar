@@ -28,6 +28,10 @@ public class EChild extends DParentAccessModifier{
         // her hangi bir class'daki static variable'i
         // classIsmi.staticVariableIsmi seklinde kullanabiliriz
 
+        System.out.println(DParentAccessModifier.sayiStaticDefault);
+        System.out.println(DParentAccessModifier.sayiStaticPublic);
+        //System.out.println(DParentAccessModifier.sayiStaticPrivate); //inheritance'da private class uyeleri inherit edilemez
+
 
     }
 
