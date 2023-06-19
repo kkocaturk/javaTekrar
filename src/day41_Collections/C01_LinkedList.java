@@ -7,6 +7,7 @@ import java.util.Queue;
 
 public class C01_LinkedList {
     public static void main(String[] args) {
+        // ->https://www.geeksforgeeks.org/how-to-get-elements-by-index-from-hashset-in-java/
         /*
         Collections objeleri bir arada tutuan yapılardır.
         Günlük hayatta karşılaşılan durumlarla ilgili oluşan ihtiyaçlara göre farklı collections yapıları vardır.

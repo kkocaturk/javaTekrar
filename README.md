@@ -688,6 +688,8 @@ System.out.println(Arrays.toString(kelimeler)); // [Java, candir, can,, bundan, 
  ## 31.gün
 - Biz gorunur bir constructor olusturdugumuzda
 Java'nin default constructor'i silmesine benzer olarak
+- inheritance'da private class uyeleri inherit edilemez
+
 ```
     Extends keyword kullanilmis bir class'daki
     herhangi bir constructor'in ilk satirinda
