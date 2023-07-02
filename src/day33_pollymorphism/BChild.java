@@ -6,7 +6,8 @@ public class BChild extends AParent{
 
     @Override
     void method1() {
-        // super.method1();
+         super.method1();
+        System.out.println("Bchild Class method1() çalıştı");
         // burada super. olursa hem child class'daki method1
         // hem de super class'daki method1 calisir
 
