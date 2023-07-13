@@ -5,7 +5,6 @@ public class CAvciKuslar extends BKuslar{
     public void hareket(){
         System.out.println("ucarlar");
     }
-
     public void beslenme(){
         System.out.println("et yerler");
     }
