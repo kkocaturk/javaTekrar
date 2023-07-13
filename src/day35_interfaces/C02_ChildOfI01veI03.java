@@ -7,7 +7,7 @@ public class C02_ChildOfI01veI03 implements I01_Interface,I03_Interface{
     /*
         Interface'in EN ONEMLI ARTISI
         bir class'in birden fazla interface'i implement edebilmesidir
-        biir class'i extends ile de baska class'a chil yapabiliriz
+        bir class'i extends ile de baska class'a child yapabiliriz
 
         Ancak birden fazla interface'i implement ederken
         dikkat etmemiz gereken bir konu vardir

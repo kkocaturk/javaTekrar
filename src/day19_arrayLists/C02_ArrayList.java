@@ -24,7 +24,7 @@ public class C02_ArrayList {
          */
 
 
-        //önce eski yazdığımız yöntemi hatırlayalım --> yaklaşık olarak Araylist gibi çalışıyor.
+        //önce eski yazdığımız yöntemi hatırlayalım --> yaklaşık olarak Arraylist gibi çalışıyor.
         int[] arr ={3,4};
         arr = C06_ArrayElemanEklemeMethodu.arrayeElementEkle(arr,5);
 
